@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./source/css/style.css">
+    <link rel="stylesheet" href="./source/css/fontawesome/css/all.css"></li>
+    <title>Lucas - SCTec</title>
+</head>
+<body>
+    <header>
+        <div class="center">
+            <nav class="desktop rigth">
+                <ul>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <nav class="mobile rigth">
+                <div class="botao-menu-mobile"><i class="fa-solid fa-bars"></i></div>
+                <ul>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="sobre" class="sobre">
+        <h3> Olá, sou Lucas Fernando Soares.</h3>
+        <div class="center">
+            <div class="w25 left foto-autor">
+                <img src="./source/images/LUCAS-PICTURE.png" alt="Foto de Lucas Soares vestindo moleton azul escuro e jeans, 
+                ele está encostado em um parapeito de uma plataforma de vidro no alto da serra de Rancho Queimado em Santa Catarina
+                ao fundo a paisagem verde da serra e a rodovia logo abaixo" title="Foto Lucas">
+            </div>
+            <div class="w75 left historia-autor">
+                <h4>História</h4>
+                <p>Nasci em 4 de agosto de 1994, em Joinville, em uma família simples, que mesmo com dificuldades sempre fez o 
+                    possível para dar o melhor para mim e minhas irmãs. Desde cedo, aprendi o valor do esforço e da educação, 
+                    começando meus estudos em escola pública e depois seguindo para o ensino médio em uma instituição privada mais 
+                    exigente, onde desenvolvi disciplina e vontade de aprender.</p>
+                <h4>Educação</h4>
+                <p>Com interesse em entender como as coisas funcionam, escolhi cursar Engenharia Mecânica. Durante a faculdade, 
+                    tive experiências importantes, como participação em pesquisas acadêmicas e um estágio na área de manutenção 
+                    industrial, que me deram prática e fortaleceram minha capacidade de resolver problemas. No final da graduação,
+                    entrei em uma empresa do setor automotivo como aprendiz e, após me formar, cresci até 
+                    me tornar analista de processos.</p>
+                <h4>Backgroud</h4>
+                <p>Ao longo de cinco anos, acumulei experiência, liderei pequenos projetos e 
+                    aprofundei meus conhecimentos na área. Em 2023, também vivi uma experiência marcante ao fazer trabalho voluntário
+                    na Alemanha, o que ampliou minha visão de mundo e minhas habilidades pessoais.
+                    Com o tempo, decidi mudar de carreira e migrar para o desenvolvimento web. Iniciei meus estudos com C++, 
+                    depois avancei para PHP e banco de dados, e busquei uma base mais sólida com o curso CS50x de Harvard. 
+                    Hoje, sigo construindo minha trajetória na área de tecnologia, unindo disciplina, aprendizado contínuo e 
+                    vontade de evoluir.</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container-slider">
+            <button class="btn-seta btn-voltar" id="btn-voltar">Voltar</button>
+            <ul class="container-pj"></ul>
+            <button class="btn-seta btn-avancar" id="btn-avancar">Avançar</button>
+        </div>
+    </section>
+
+    <section id="habilidades" class="habilidades">
+        <div class="container-habilidades">
+            <h2>Habilidades e Tecnologias</h2>
+
+            <table class="tabela-habilidades">
+            <thead>
+                <tr>
+                <th>Tecnologia</th>
+                <th>Nível</th>
+                <th>Descrição</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                <td>HTML</td>
+                <td>Intermediário</td>
+                <td>Consigo estruturar páginas com HTML semântico, organizando bem os elementos.</td>
+                </tr>
+
+                <tr>
+                <td>CSS</td>
+                <td>Básico</td>
+                <td>Tenho conhecimento em flexbox e layout, mas ainda tenho muito a aprender e praticar responsividade e organização de estilos.</td>
+                </tr>
+
+                <tr>
+                <td>JavaScript</td>
+                <td>Básico</td>
+                <td>Consigo manipular o DOM e criar interações simples, mas ainda estou desenvolvendo lógica mais avançada.</td>
+                </tr>
+
+                <tr>
+                <td>PHP</td>
+                <td>Intermediário</td>
+                <td>Tenho alguma prática com lógica backend, criação de sistemas e integração com banco de dados.</td>
+                </tr>
+
+                <tr>
+                <td>Git / GitHub</td>
+                <td>Básico</td>
+                <td>Utilizo para versionamento de código, commits e organização de projetos, ainda evoluindo no uso de branches.</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="contato" class="contato">
+        <div class="center">
+            <div class="w50 left contato-header">
+                <p>Para mais informações, dúvidas e sugestões de melhoria, entre em contato!</p>
+            </div>
+            <div class="w50 left contato-info">
+                <a href="mailto:lucasfsoares.fs@gmail.com"><i class="fa-solid fa-at"></i> Email</a>
+                <a href="https://linkedin.com/in/lucasfsoares" target="_blank"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                <a href="https://github.com/lucasfnandos" target="_blank"><i class="fa-brands fa-github"></i>  GitHub </a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </section>
+        <script src="./source/js/script.js"></script>
+    <footer>
+        <p>&copy Direitos reservados a Lucas</p>
+    </footer>
+</body>
+</html>

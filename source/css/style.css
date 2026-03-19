@@ -1,0 +1,431 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.center{
+    max-width: 2080px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.w25{
+    width: 25%;
+    padding: 0 10px;
+}
+
+.w33{
+    width: 33.33%;
+    padding: 0 10px;
+}
+
+.w50{
+    padding: 0 10px;
+    width: 50%;
+}
+
+.w75{
+    padding: 0 5px;
+    width: 75%;
+}
+
+.clear{
+    clear: both;
+}
+
+
+header{
+    padding:20px 0;
+    background-color: #f1f1f1;
+}
+
+.mobile{
+    display: none;
+}
+
+nav.desktop ul{
+    position: relative;
+    top: 6px;
+    list-style-type: none;
+}
+
+nav.desktop li{
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 15px;
+    padding: 0 15px;
+    font-weight: 300;
+}
+
+nav.desktop a{
+    color: #333;
+    text-decoration: none;
+}
+
+nav.desktop a:hover{
+    text-decoration: underline;
+}
+
+section.sobre {
+    padding: 20px 0 20px;
+}
+
+section.sobre h3 {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+}
+
+section.sobre .foto-autor {
+    padding: 0 10px 0 5px;
+
+}
+
+section.sobre .foto-autor img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 4px;
+}
+
+section.sobre p {
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+section.sobre .historia-autor h4 {
+    color: #333;
+}
+
+.btn-seta {
+    width: 10%;
+    max-width: 80px;
+    min-height: 500px;
+    cursor: pointer;
+    border: none;
+    font-weight: bolder;
+}
+
+section.projects {
+    background-color: #fafafa;
+    margin: 20px 0 20px;
+
+}
+
+section.projects .container-slider {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    align-content: center;
+    min-height: 500px;
+}
+
+section.projects .container-pj {
+    width: 80%;
+    position: relative;
+    padding-left: 0;
+}
+
+section.projects .card {
+    max-width: 100%;
+    display: none; 
+    align-items: center;
+    gap: 20px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    align-items: flex-start;
+}
+
+section.projects .card.selecionado{
+    opacity: 1;
+    z-index: 1;
+    display: flex;
+}
+
+section.projects img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0 10px;
+}
+
+section.projects .info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section.projects .info p {
+    text-align: justify;
+    overflow-wrap: break-word;
+}
+
+section.habilidades {
+    padding: 20px 0  20px;
+    text-align: center;
+}
+
+section.habilidades .container-habilidades {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section.habilidades h2 {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+section.habilidades .tabela-habilidades {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+
+section.habilidades .tabela-habilidades thead {
+    background-color: #333;
+    color: #fff;
+}
+
+section.habilidades .tabela-habilidades th,
+.tabela-habilidades td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+section#habilidades .tabela-habilidades tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+section.habilidades .tabela-habilidades tbody tr:hover {
+    background-color: #eaeaea;
+}
+
+section.contato {
+    background-color: #e1e1e1;
+    padding: 15px;
+}
+
+section.contato .contato-header {
+    padding: 20px 5px 5px 20px ;
+}
+
+section.contato .contato-info {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+section.contato .contato-info {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+section.contato .contato-info a {
+    text-decoration: none;
+    color: #333;
+    padding-top: 15px;
+}
+
+section.contato .contato-info a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0 10px;
+}
+
+footer p {
+    color: #333;
+}
+
+
+@media screen and (max-width: 950px){
+    .left,
+    .right{
+        float: none;
+        text-align: center;
+    }
+    .w25,
+    .w50,
+    .w75{
+        width: 100%;
+        padding: 15px 10px;
+    }
+    section.sobre{
+        text-align: center;
+    }
+
+    section.sobre .foto-autor{
+        display: flex;
+        justify-content: center;
+    }
+
+    section.sobre .foto-autor img{
+        max-width: 250px;
+        height: auto;
+    }
+
+    section.sobre p{
+        text-align: center;
+    }
+
+    section.projects .container-pj {
+        padding: 0 10px 0 10px;
+    }
+    
+    section.projects .info p{
+        font-size: 15px;
+    }
+    
+    section.projects .container-slider{
+        min-height: 700px;
+    }
+    
+    section.projects .btn-seta{
+        min-height: 700px;
+    }
+    
+    section.habilidades .tabela-habilidades th,
+    section.habilidades .tabela-habilidades td{
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    section.contato .contato-header{
+        text-align: center;
+        padding: 10px;
+    }
+
+    section.contato .contato-info{
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+
+    nav.desktop{
+        display: none;
+    }
+
+    nav.mobile li{
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+    }
+
+    nav.mobile{
+        display: block;
+    }
+    .botao-menu-mobile{
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+    }
+    nav.mobile ul{
+        top: 55px;
+        z-index: 3;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        display: none;
+        text-align: center;
+    }
+    nav.mobile li{
+        font-weight: 300;
+        width: 100%;
+        display: block;
+        background-color: white;
+        border-bottom: 1px solid #ccc;
+        font-size: 15px;
+        padding: 8px 0;
+    }
+    nav.mobile a{
+        display: block;
+        color: #444;
+        text-decoration: none;
+    }
+
+    nav.mobile ul.ativo {
+        display: block;
+        padding-left: 0;
+    }
+
+    nav.mobile i {
+        color: #333;
+    }
+
+    h3, h4, p{
+        padding: 0 10px;
+    }
+
+    section.projects .container-pj {
+        width: 75%;
+    }
+
+    section.projects .card.selecionado{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.projects .info{
+        width: 100%;
+        padding: 0;
+    }
+
+    section.projects img{
+        width: 80%;
+    }
+
+    section.projects .btn-seta{
+        width: 20%;
+    }
+
+    .container-habilidades{
+        overflow-x: auto;
+    }
+
+    section.contato .contato-info a{
+        padding: 10px 0;
+        display: block;
+    }
+    
+    section.projects .info h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    section.projects .info p{
+        font-size: 14px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 500px){
+    section.projects .container-slider{
+        min-height: 900px;
+    }
+    
+    section.projects .btn-seta{
+        min-height: 900px;
+    }
+}
